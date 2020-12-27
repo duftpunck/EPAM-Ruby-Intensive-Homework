@@ -1,17 +1,11 @@
+# frozen_string_literal: true
+
 a = 'GTAT'
-b=''
+b = ''
 a.chars.map do |ch|
-  if ch == "A"
-    b << "T"
-  end
-  if ch == "T"
-    b << "A"
-  end
-  if ch == "C"
-    b << "G"
-  end
-  if ch == "G"
-    b << "C"
-  end
+  b << 'T' if ch == 'A'
+  b << 'A' if ch == 'T'
+  b << 'G' if ch == 'C'
+  b << 'C' if ch == 'G'
 end
 p b
