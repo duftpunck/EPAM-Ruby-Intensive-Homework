@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 def task(array)
   value_with_index = {}
@@ -21,9 +22,7 @@ def task(array)
       end
     end
 
-    if left_sum == right_sum && left_sum != 0
-      answer = rez
-    end
+    answer = rez if left_sum == right_sum && left_sum != 0
   end
   p answer
 end
